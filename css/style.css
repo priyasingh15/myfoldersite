@@ -1,0 +1,150 @@
+             :root {
+                --primary-color: rgba(13, 110, 139, 0.75);
+                --secondary-color: rgba(24, 39, 51, 0.85);
+            }
+            
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif !important;
+            }
+            
+            main {
+                background: #f5f5f5;
+                padding: 50px;
+                background-size: cover;
+                display: flex;
+            }
+            
+            header {
+                text-align: center;
+                padding: 15px;
+            }
+            
+            .left_side {
+                width: 29%;
+                background: #fff;
+                float: left;
+                margin: 0 5px;
+                padding: 15px;
+                border-radius: 25px 0 0 0;
+                box-shadow: 2px 5px 3px #f5f5f5;
+            }
+            
+            .right_side {
+                width: 70%;
+                background: #fff;
+                float: right;
+                padding: 15px;
+                border-radius: 0 25px 0px 0px;
+                box-shadow: 2px 5px 3px #f5f5f5;
+            }
+            
+            .details_box img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .result_container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                text-align: center;
+                row-gap: 15px;
+            }
+            
+            .search_box {
+                display: grid;
+                grid-template-columns: auto auto;
+                text-align: center;
+            }
+            
+            .search_box,
+            .successful_launch,
+            .successful_landing {
+                display: grid;
+                grid-template-columns: auto auto;
+                text-align: center;
+                column-gap: 10px;
+                row-gap: 10px;
+                margin-top: 15px;
+            }
+            
+            .search_container h4 {
+                text-align: center;
+            }
+            
+            .search_container h4 {
+                margin-top: 30px;
+            }
+            
+            .search_box span:nth-child(1),
+            .search_box span:nth-child(2),
+            .search_box span:nth-child(3),
+            .search_box span:nth-child(4),
+            .search_box span:nth-child(5),
+            .search_box span:nth-child(6),
+            .search_box span:nth-child(7),
+            .search_box span:nth-child(8),
+            .search_box span:nth-child(9),
+            .search_box span:nth-child(10),
+            .search_box span:nth-child(11),
+            .search_box span:nth-child(12),
+            .search_box span:nth-child(13),
+            .search_box span:nth-child(14),
+            .search_box span:nth-child(15),
+            .successful_launch span:nth-child(1),
+            .successful_launch span:nth-child(2),
+            .successful_landing span:nth-child(1),
+            .successful_landing span:nth-child(2) {
+                background: green;
+                border-radius: 25px;
+                color: #fff;
+                padding: 5px;
+            }
+            
+            .details_box {
+                border: 1px dashed #707070;
+                margin: 0 5px;
+                padding: 0 15px 15px 15px;
+            }
+            
+            .details_box h3 {
+                font-size: 15px;
+                text-align: left;
+                color: #707070;
+                font-weight: 300;
+            }
+            
+            @media (min-width: 700px) and (max-width: 1024px) {
+                main {
+                    padding: 10px;
+                }
+                .result_container {
+                    grid-template-columns: auto auto;
+                }
+            }
+            
+            @media only screen and (max-width: 700px) {
+                main {
+                    padding: 15px;
+                    flex-direction: column;
+                }
+                .result_container {
+                    grid-template-columns: auto;
+                }
+                .left_side,
+                .right_side {
+                    width: 100%;
+                    float: none;
+                }
+            }
+			
+			.selected {
+				background: blue !important;
+			}
+			
+			.missionName {
+				color: purple;
+			}
